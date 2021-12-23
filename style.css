@@ -148,11 +148,11 @@ section{
 
 @media (max-width: 500px) {
     .kartu .content h2 {
-        font-size: .9em;
+        font-size: 1.3em;
     }
 
     .kartu .content p{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .kartu img{
@@ -166,6 +166,13 @@ section{
         width: 350px;
     }
 
+    .kartu .content a {
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 15px;
+        z-index: 9999;
+    }
+
     .kartu:hover .content {
         left: 0%;
         opacity: 1;
@@ -173,18 +180,11 @@ section{
     }
 
     .kartu {
-        height: 390px;
+        height: 360px;
     }
 
     .kartu .content {
         padding: 15px 15px 15px;
-    }
-
-    .kartu .content a {
-        margin-top: 0px;
-        font-weight: 700;
-        font-size: 10px;
-        z-index: 9999;
     }
 }
 /* end of card */
