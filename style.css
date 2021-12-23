@@ -1,204 +1,426 @@
-.jumbotron, .project{
-    padding-top: 6rem;
-    background-color: #e2f8ff;
+.jumbotron,
+.project, .contact {
+  padding-top: 6rem;
+  background-color: #e2f8ff;
 }
 
-section{
-    padding-top: 5rem;
+section {
+  padding-top: 5rem;
 }
 
 h3 {
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+}
+
+.about hr {
+  width: 250px;
+  border-top: 4px solid #000;
+  margin: 5px auto;
+}
+
+.about .desc hr {
+  width: 350px;
+  border-top: 4px solid #000;
+  margin: 5px auto;
+}
+
+.project hr {
+  width: 350px;
+  border-top: 4px solid #000;
+  margin: 5px auto;
+}
+
+.skill hr {
+  width: 200px;
+  border-top: 4px solid #000;
+  margin: 5px auto;
+}
+
+.contact hr {
+  width: 250px;
+  border-top: 4px solid #000;
+  margin: 5px auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:hover{
-    background-color: #e2f8ff;
+a:hover {
+  background-color: #e2f8ff;
 }
 
 /* card */
-.kartu{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    margin: 20px;
-    background: linear-gradient(45deg, #1a2f3f, #7094ce);
-    box-shadow: 0px 38px 27px -29px rgba(0, 0, 0, 0.75);
+.kartu {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  box-shadow: 0px 38px 27px -29px rgba(0, 0, 0, 0.75);
 }
 
-.kartu img{
-    position: absolute;
-    bottom: 0;
-    height: 350px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 350px;
-    transition: .5s;
+.kartu img {
+  position: absolute;
+  bottom: 0;
+  height: 350px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 350px;
+  transition: 0.5s;
 }
 
-.kartu:hover img{
-    left: 75%;
-    height: 450px;
-    width: 450px;
+.kartu:hover img {
+  left: 75%;
+  height: 450px;
+  width: 450px;
 }
-.kartu .content{
-    position: relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: .5s;
-    opacity: 0;
-    visibility: hidden;
-    text-align: left;
-    z-index: 9999;
-}
-
-.kartu:hover{
-    box-shadow: 0px 38px 27px -14px rgba(0, 0, 0, 0.75);
+.kartu .content {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  z-index: 9999;
 }
 
-.kartu:hover .content{
-    left: 0%;
-    opacity: 1;
-    visibility: visible;
+.kartu:hover {
+  box-shadow: 0px 38px 27px -14px rgba(0, 0, 0, 0.75);
 }
 
-.kartu .content h2{
-    color: white;
-    font-size: 2.2em;
-    text-transform: uppercase;
-    line-height: 1em;
+.kartu:hover .content {
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
 }
 
-.kartu .content p{
-    color: white;
-    font-size: 15px;
+.kartu .content h2 {
+  color: white;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  line-height: 1em;
 }
 
-.kartu .content a{
-    position: relative;
-    color: #111;
-    background: #fff;
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: 700;
+.kartu .content p {
+  color: white;
+  font-size: 15px;
+}
+
+.kartu .content a {
+  position: relative;
+  color: #111;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 @media (max-width: 720px) {
-    .kartu .content h2 {
-        font-size: 2em;
-    }
+  .kartu .content h2 {
+    font-size: 2em;
+  }
 
-    .kartu .content p{
-        font-size: 15px;
-    }
+  .kartu .content p {
+    font-size: 15px;
+  }
 
-    .kartu:hover img {
-        left: 80%;
-        height: 400px;
-        width: 400px;
-    }
+  .kartu:hover img {
+    left: 80%;
+    height: 400px;
+    width: 400px;
+  }
 
-    .kartu:hover .content {
-        left: -0%;
-        opacity: 1;
-        visibility: visible;
-    }
+  .kartu:hover .content {
+    left: -0%;
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .kartu {
-        height: 350px;
-    }
+  .kartu {
+    height: 350px;
+  }
 
-    .kartu .content {
-        padding: 30px 30px 30px;
-    }
+  .kartu .content {
+    padding: 30px 30px 30px;
+  }
 
-    .kartu .content a {
-        padding: 5px 5px;
-    }
+  .kartu .content a {
+    padding: 5px 5px;
+  }
 }
 
 @media (max-width: 600px) {
-    .kartu .content h2 {
-        font-size: 2em;
-    }
+  .kartu .content h2 {
+    font-size: 2em;
+  }
 
-    .kartu .content p {
-        font-size: 15px;
-    }
+  .kartu .content p {
+    font-size: 15px;
+  }
 
-    .kartu:hover img {
-        left: 80%;
-        height: 400px;
-        width: 400px;
-    }
+  .kartu:hover img {
+    left: 80%;
+    height: 400px;
+    width: 400px;
+  }
 
-    .kartu:hover .content {
-        left: 0%;
-        opacity: 1;
-        visibility: visible;
-    }
+  .kartu:hover .content {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .kartu {
-        height: 400px;
-    }
+  .kartu {
+    height: 400px;
+  }
 
-    .kartu .content {
-        padding: 30px 30px 30px;
-    }
+  .kartu .content {
+    padding: 30px 30px 30px;
+  }
 
-    .kartu .content a {
-        padding: 5px 5px;
-    }
+  .kartu .content a {
+    padding: 5px 5px;
+  }
 }
-
 
 @media (max-width: 500px) {
-    .kartu .content h2 {
-        font-size: 1.3em;
-    }
+  .kartu .content h2 {
+    font-size: 1.3em;
+  }
 
-    .kartu .content p{
-        font-size: 15px;
-    }
+  .kartu .content p {
+    font-size: 15px;
+  }
 
-    .kartu img{
-        height: 330px;
-        width: 330px;
-    }
+  .kartu img {
+    height: 330px;
+    width: 330px;
+  }
 
-    .kartu:hover img {
-        left: 77%;
-        height: 350px;
-        width: 350px;
-    }
+  .kartu:hover img {
+    left: 77%;
+    height: 350px;
+    width: 350px;
+  }
 
-    .kartu .content a {
-        margin-top: 0px;
-        font-weight: 700;
-        font-size: 15px;
-        z-index: 9999;
-    }
+  .kartu .content a {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    z-index: 9999;
+  }
 
-    .kartu:hover .content {
-        left: 0%;
-        opacity: 1;
-        visibility: visible;
-    }
+  .kartu:hover .content {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .kartu {
-        height: 390px;
-    }
+  .kartu {
+    height: 390px;
+  }
 
-    .kartu .content {
-        padding: 15px 15px 15px;
-    }
+  .kartu .content {
+    padding: 15px 15px 15px;
+  }
 }
 /* end of card */
+
+/* biodata */
+
+.container-biodata {
+  position: relative;
+  justify-content: center;
+  margin-top: 10px;
+  right: -39%;
+  width: 250px;
+  height: 350px;
+}
+
+.clickme {
+  position: absolute;
+  top: 20px;
+  right: 19%;
+  text-align: center;
+  animation: click 1.5s infinite;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+}
+
+@keyframes click {
+  0% {
+    top: 50px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle h2 {
+  bottom: 100%;
+}
+
+.middle span {
+  text-align: left;
+}
+
+.data {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 20px;
+  transition: transform 0.6s linear;
+}
+
+.atas {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 140px;
+  text-transform: uppercase;
+}
+
+.isi {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  text-align: left;
+  bottom: 109px;
+}
+
+.isi span {
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.ttl {
+  position: absolute;
+  top: 60px;
+}
+
+.sekolah {
+  position: absolute;
+  top: 120px;
+}
+
+.wa {
+  position: absolute;
+  top: 180px;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  background-color: #f1f1f1;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background-color: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 1px 3px 24px 3px rgba(0, 0, 0, 0.67);
+}
+
+.back-content {
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+
+.sm {
+  position: absolute;
+  top: 113px;
+  margin: 0 70px;
+}
+
+.sm a {
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  color: #2c3e50;
+  font-size: 50px;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.sm a:hover {
+  color: white;
+  font-size: 35px;
+  top: 120px;
+  background-color: #2c3e50;
+}
+
+.data:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.data:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+@media (max-width: 700px) {
+  .container-biodata {
+    right: 25%;
+  }
+
+  .clickme {
+    right: 13%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-biodata {
+    left: 22%;
+  }
+
+  .clickme {
+    visibility: hidden;
+    bottom: 100%;
+    right: 37%;
+  }
+}
+/* end of biodata */
+
+/* skill */
+.skill .box{
+    background-color: yellow;
+    
+}

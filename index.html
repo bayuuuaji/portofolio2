@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-
+    <script src="https://kit.fontawesome.com/d9a844dd8f.js" crossorigin="anonymous"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
     </style>
@@ -40,7 +40,7 @@
 
     <!-- header -->
     <section class="jumbotron text-center">
-      <div class="container-fluid text-center pt-5 pb-2 container-header">
+      <div class="container-fluid text-center pt-3 pb-2 container-header">
         <div class="row">
           <div class="col-sm-12 d-flex justify-content-center">
             <div class="kartu">
@@ -70,11 +70,54 @@
         <div class="row text-center mb-3">
           <div class="col">
             <h3>Tentang Saya</h3>
+            <hr>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="container-biodata mb-3">
+                    <div class="data">
+                      <div class="front">
+                        <img src="img/card.jpg" class="card-img" />
+                      </div>
+                      <div class="back text-center">
+                        <div class="back-content middle d-flex justify-content-center">
+                          <div class="atas">
+                            <h2>Biodata Diri</h2>
+                          </div>
+                          <div class="isi">
+                            <div class="nama">
+                              <span>Nama</span> <br />
+                              <p>Bayu Aji Santoso</p>
+                              <br />
+                            </div>
+                            <div class="ttl">
+                              <span>Tempat & Tanggal Lahir</span>
+                              <p>Jombang, 15 Juni 2002</p>
+                            </div>
+                            <div class="sekolah">
+                              <span>Pendidikan Terakhir</span>
+                              <p>SMK Telkom Malang</p>
+                            </div>
+                            <div class="wa">
+                              <span>Domisili</span>
+                              <p>Jombang</p>
+                            </div>
+                          </div>
+                          <div class="sm">
+                            <a href="https://wa.me/085855318125" target="_blink"><i class="fab fa-whatsapp"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center fs-5" style="text-align: justify">
+        <div class="row justify-content-center fs-5 desc" style="text-align: justify">
           <div class="col-md-5 border border-0" style="min-height: 380px">
-            <h1>Network Engineer</h1>
+            <h1 class="text-center">Network Engineer</h1>
+            <hr>
             <br />
             <p>
               Sebagai seorang <b>Network Engineer</b>, Saya memiliki kemampuan melakukan konfigurasi jaringan. <br />
@@ -86,11 +129,13 @@
             </p>
           </div>
           <div class="col-md-5 border border-0 align-baseline" style="min-height: 380px">
-            <h1>Web Developer</h1> <br>
+            <h1 class="text-center">Web Developer</h1>
+            <hr>
+            <br />
             <p>
               Meskipun background pendidikan saya adalah <b>TKJ (Teknik Komputer dan Jaringan)</b>, tetapi saya memiliki minat yang besar sebagai <b>Web Developer</b>. <br /><br />
               Hal ini bermula saat saya melakukan Praktik Kerja Industri di <b>PT Telkom Regional V Surabaya</b>. Saya memiliki tugas membuat website internal untuk perusahaan. <br /><br />
-              Akhirnya saya mendalami pembelajaran pembuatan website secara mandiri melalui <i>channel youtube</i> <a href="https://www.youtube.com/c/WebProgrammingUNPAS">Web Programming UNPAS</a>
+              Akhirnya saya mendalami pembelajaran pembuatan website secara mandiri. Saya mempelajari <b>web developer fundamental</b> melalui<i>channel youtube</i> <a href="https://www.youtube.com/c/WebProgrammingUNPAS">Web Programming UNPAS</a>.
             </p>
           </div>
         </div>
@@ -111,51 +156,123 @@
         <div class="row text-center mb-3">
           <div class="col">
             <h3>Pengalaman Proyek</h3>
+            <hr>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/1.jpg" class="card-img-top" alt="projects1"">
+              <img src="img/project/1.png" class="card-img-top" alt="projects1"">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Mikrotik Network Automitation </h5>
+                <p class="card-text">Konfigurasi pada mikrotik secara otomatis melalui bot telegram.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/2.jpg" class="card-img-top" alt="projects1"">
+              <img src="img/project/2.png" class="card-img-top" alt="projects1"">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Mikrotik Monitoring</h5>
+                <p class="card-text">Monitoring mikrotik menggunakan telegram secara <i>real-time</i>.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/3.jpg" class="card-img-top" alt="projects1"">
+              <img src="img/project/3.png" class="card-img-top" alt="projects1"">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Mikrotik QoS</h5>
+                <p class="card-text">Konfigurasi <i>Quality of Service</i> pada mikrotik melalui telegram.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/4.jpg" class="card-img-top" alt="projects1"">
+              <img src="img/project/4.png" class="card-img-top" alt="projects1"">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Mikrotik Connection</h5>
+                <p class="card-text">Mengecek konektifitas mikrotik melalui telegram secara <i>real-time</i>.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <div class="card">
-              <img src="img/5.jpg" class="card-img-top" alt="projects1"">
+              <img src="img/project/5.png" class="card-img-top" alt="projects1"">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">SQL Query Relation Table</h5>
+                <p class="card-text">Pembuatan tabel relasi pada <i>SQL</i> secara lokal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/project/6.png" class="card-img-top" alt="projects1"">
+              <div class="card-body">
+                <h5 class="card-title">SQL QUERY (DDL dan DML)</h5>
+                <p class="card-text">Konfigurasi pada <i>SQL</i> menggunakan metode DDL dan DML</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/project/7.png" class="card-img-top" alt="projects1"">
+              <div class="card-body">
+                <h5 class="card-title">Control Panel Hosting</h5>
+                <p class="card-text">Pembuatan <i>control panel hosting</i> pada server lokal berbasis <b>Linux (Centos)</b>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <img src="img/project/8.jpg" class="card-img-top" alt="projects1"">
+              <div class="card-body">
+                <h5 class="card-title">Simulasi Jaringan</h5>
+                <p class="card-text">Konfigurasi topologi jaringan dengan berbagai ketentuan seperti <b>subnetting, VLAN, Routing, NAT, ACL, dan IPS</b>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <a href="https://www.youtube.com/watch?v=9nUJ0qs2s-Y&t=6s" target="_blank">
+              <img src="img/project/9.jpg" class="card-img-top" alt="projects1">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Antena Wajan</h5>
+                <p class="card-text">Sebuah video <i>tutorial</i> tentang pembuatan antena wajan dan cara penggunaannya.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <a href="https://www.youtube.com/watch?v=pw_6TQ2rMZ8" target="_blank">
+              <img src="img/project/10.jpg" class="card-img-top" alt="projects1">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Splashing Fiber Optik</h5>
+                <p class="card-text">Sebuah <i>tutorial</i> tentang penyambungan kabel fiber optik menggunakan <i>splicer</i>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <a href="https://drive.google.com/file/d/13MlgXX0D88-60aP9erBLfXcpgTlwCMUa/view?usp=sharing" target="_blank">
+              <img src="img/project/11.jpg" class="card-img-top" alt="projects1">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Body Hearness Safety</h5>
+                <p class="card-text">Buku tentang bagaimana keamaan pada saat pemasangan kabel udara menggunakan <i>vody hearness</i>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <a href="https://drive.google.com/file/d/1xHB_zbaHn0NKU_EUaWYkPq8LFUA81bOh/view?usp=sharing" target="_blank">
+              <img src="img/project/12.jpg" class="card-img-top" alt="projects1">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Buku Materi TJBL</h5>
+                <p class="card-text">Sebuah buku yang berisi materi <b>Teknologi Jaringan Berbasis Luas</b> untuk SMK.</p>
               </div>
             </div>
           </div>
@@ -171,11 +288,47 @@
     </section>
     <!-- end of portofolio -->
 
+    <!-- Skill -->
+    <section class="skill text-center" id="skill">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Skill Saya</h3>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+               <img src="/img/1.jpg" class="card-img" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+               <img src="/img/1.jpg" class="card-img" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+               <img src="/img/1.jpg" class="card-img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2f8ff"
+          fill-opacity="1"
+          d="M0,64L40,58.7C80,53,160,43,240,58.7C320,75,400,117,480,112C560,107,640,53,720,53.3C800,53,880,107,960,128C1040,149,1120,139,1200,122.7C1280,107,1360,85,1400,74.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- end of skill -->
+
     <!-- contact -->
     <section class="contact" id="contact">
       <div class="row text-center mb-3">
         <div class="col-sm-12">
           <h3>Hubungi Saya</h3>
+          <hr>
         </div>
       </div>
       <div class="row justify-content-center">
