@@ -238,9 +238,8 @@ h3 {
 
 .container-biodata {
   position: relative;
-  justify-content: center;
+  display: flex;
   margin-top: 10px;
-  right: -39%;
   width: 250px;
   height: 350px;
 }
@@ -396,7 +395,7 @@ h3 {
   transform: perspective(600px) rotateY(0deg);
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .container-biodata {
     right: 25%;
   }
@@ -409,7 +408,7 @@ h3 {
 @media (max-width: 600px) {
   .container-biodata {
     left: 22%;
-  }
+  } */
 
   .clickme {
     visibility: hidden;
