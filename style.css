@@ -1,5 +1,6 @@
 .jumbotron,
-.project, .contact {
+.project,
+.contact {
   padding-top: 6rem;
   background-color: #e2f8ff;
 }
@@ -420,10 +421,10 @@ h3 {
 /* end of biodata */
 
 /* skill */
-.skill .box .imgbox img{
-    transition: transform 2s;
+.skill .box .imgbox img {
+  transition: transform 2s;
 }
 
-.skill .box:hover .imgbox img{
-    transform: scale(1.2);
+.skill .box:hover .imgbox img {
+  transform: scale(1.2);
 }
