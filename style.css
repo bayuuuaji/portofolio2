@@ -6,3 +6,185 @@
 section{
     padding-top: 5rem;
 }
+
+/* card */
+.kartu{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    background: linear-gradient(45deg, #1a2f3f, #7094ce);
+    box-shadow: 0px 38px 27px -29px rgba(0, 0, 0, 0.75);
+}
+
+.kartu img{
+    position: absolute;
+    bottom: 0;
+    height: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 350px;
+    transition: .5s;
+}
+
+.kartu:hover img{
+    left: 75%;
+    height: 450px;
+    width: 450px;
+}
+.kartu .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    z-index: 9999;
+}
+
+.kartu:hover{
+    box-shadow: 0px 38px 27px -14px rgba(0, 0, 0, 0.75);
+}
+
+.kartu:hover .content{
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.kartu .content h2{
+    color: white;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.kartu .content p{
+    color: white;
+    font-size: 15px;
+}
+
+.kartu .content a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 720px) {
+    .kartu .content h2 {
+        font-size: 2em;
+    }
+
+    .kartu .content p{
+        font-size: 15px;
+    }
+
+    .kartu:hover img {
+        left: 80%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .kartu:hover .content {
+        left: -0%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .kartu {
+        height: 350px;
+    }
+
+    .kartu .content {
+        padding: 30px 30px 30px;
+    }
+
+    .kartu .content a {
+        padding: 5px 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .kartu .content h2 {
+        font-size: 2em;
+    }
+
+    .kartu .content p {
+        font-size: 15px;
+    }
+
+    .kartu:hover img {
+        left: 80%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .kartu:hover .content {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .kartu {
+        height: 400px;
+    }
+
+    .kartu .content {
+        padding: 30px 30px 30px;
+    }
+
+    .kartu .content a {
+        padding: 5px 5px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .kartu .content h2 {
+        font-size: .9em;
+    }
+
+    .kartu .content p{
+        font-size: 12px;
+    }
+
+    .kartu img{
+        height: 330px;
+        width: 330px;
+    }
+
+    .kartu:hover img {
+        left: 77%;
+        height: 350px;
+        width: 350px;
+    }
+
+    .kartu:hover .content {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .kartu {
+        height: 390px;
+    }
+
+    .kartu .content {
+        padding: 15px 15px 15px;
+    }
+
+    .kartu .content a {
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 10px;
+        z-index: 9999;
+    }
+}
+/* end of card */
